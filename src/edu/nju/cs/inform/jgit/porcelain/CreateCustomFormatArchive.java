@@ -54,7 +54,7 @@ public class CreateCustomFormatArchive {
             return new ZipOutputStream(s);
         }
 
-		@Override
+		//@Override
         public void putEntry(ZipOutputStream out, String path, FileMode mode, ObjectLoader loader) throws IOException {
             // loader is null for directories...
             if (loader != null) {

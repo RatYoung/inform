@@ -7,5 +7,5 @@ public class AppConfigure {
     public static final int levels = 0;
     public static String[] filterExternalPackageNames = { "java.", "org.",
             "com." };
-    public static final String gitProjectPath = "/Users/mac/Desktop/INFORM-master";
+    public static String gitProjectPath = "/Users/mac/Desktop/INFORM-master";
 }

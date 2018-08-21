@@ -23,5 +23,6 @@
     <orderEntry type="library" name="org.eclipse.jgit:org.eclipse.jgit.ui:5.0.2.201807311906-r" level="project" />
     <orderEntry type="library" name="org.apache.directory.studio:org.apache.commons.io:2.4" level="project" />
     <orderEntry type="library" name="commons-compress-1" level="project" />
+    <orderEntry type="library" name="org.eclipse" level="project" />
   </component>
 </module>

@@ -43,7 +43,7 @@ public class PullRemoteRepository {
     public static void main(String[] args) throws IOException, InvalidRemoteException, TransportException, GitAPIException {
         try (Repository repository = cloneRepository()) {
             System.out.println("Having repository: " + repository.getDirectory() + " with head: " +
-                    repository.getRef(Constants.HEAD) + "/" + repository.resolve("HEAD") + "/" +
+                    repository.getRefDatabase().getRef(Constants.HEAD) + "/" + repository.resolve("HEAD") + "/" +
                     repository.resolve("refs/heads/master"));
 
             // TODO: why do we get null here for HEAD?!? See also

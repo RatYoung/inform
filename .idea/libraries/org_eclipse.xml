@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="org.eclipse">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/org.eclipse.jgit" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/org.eclipse.jgit/target/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/org.eclipse.jgit/src" />
+    </SOURCES>
+  </library>
+</component>
