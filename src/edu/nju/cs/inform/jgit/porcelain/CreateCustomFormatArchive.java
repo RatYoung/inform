@@ -31,6 +31,7 @@ import org.eclipse.jgit.api.ArchiveCommand.Format;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.lib.FileMode;
+import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.Repository;
 
@@ -55,7 +56,7 @@ public class CreateCustomFormatArchive {
         }
 
 		//@Override
-        public void putEntry(ZipOutputStream out, String path, FileMode mode, ObjectLoader loader) throws IOException {
+        public void putEntry(ZipOutputStream out, ObjectId noUse, String path, FileMode mode, ObjectLoader loader) throws IOException {
             // loader is null for directories...
             if (loader != null) {
                 ZipEntry entry = new ZipEntry(path);
