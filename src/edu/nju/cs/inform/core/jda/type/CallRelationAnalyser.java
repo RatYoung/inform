@@ -30,7 +30,7 @@ public class CallRelationAnalyser {
         parsert.setSource(input.toCharArray());
         this.root = (CompilationUnit) parsert.createAST(null);
         if (root == null || root.getPackage() == null) {
-            System.out.println("");
+            System.out.println("23333");
         }
         packageName = root.getPackage().getName().getFullyQualifiedName();
 
